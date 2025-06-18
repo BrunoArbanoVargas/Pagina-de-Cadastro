@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="logo">
+                <i class="fas fa-user-plus"></i>
+                <h1>Cadastre-se</h1>
+            </div>
+            
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome completo">
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" placeholder="Digite sua senha">
+                    <span class="error-message" id="password-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirm-password">Confirme sua Senha</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirme sua senha">
+                    <span class="error-message" id="confirm-password-error"></span>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">Aceito os <a href="#">termos de serviço</a> e <a href="#">política de privacidade</a></label>
+                    <span class="error-message" id="terms-error"></span>
+                </div>
+                
+                <button type="submit" class="submit-btn">Cadastrar</button>
+                
+                <div class="login-link">
+                    Já tem uma conta? <a href="#">Faça login</a>
+                </div>
+            </form>
+        </div>
+        
+        <div class="success-message" id="successMessage">
+            <i class="fas fa-check-circle"></i>
+            <h2>Cadastro realizado com sucesso!</h2>
+            <p>Obrigado por se cadastrar em nosso sistema.</p>
+            <button id="backButton" class="back-btn">Voltar</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
