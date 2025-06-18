@@ -186,7 +186,7 @@ body {
 }
 
 /* Responsividade */
-@media (max-width: 600px) {
+@media (max-width: 601px) {
     .form-container {
         padding: 30px 20px;
     }
